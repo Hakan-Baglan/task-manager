@@ -1,0 +1,10 @@
+<nb-card>
+    <nb-card-header>Görev Ekle</nb-card-header>
+    <nb-card-body>
+        <input type="text" nbInput [formControl]="inputForm" placeholder="Görev İçeriği">
+    </nb-card-body>
+    <nb-card-footer>
+        <button style="margin-right: 10px;" nbButton status="danger" (click)="close()">Vazgeç</button>
+        <button nbButton status="success" (click)="save()">Kaydet</button>
+    </nb-card-footer>
+</nb-card>

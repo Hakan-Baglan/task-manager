@@ -1,0 +1,12 @@
+<div class="d-flex align-items-center justify-content-between list-items">
+    <div>
+        {{task.title}}
+    </div>
+    <div class="toggle">
+        <nb-toggle [checked]="task.status" (checkedChange)="toggle($event)" status="primary"></nb-toggle>
+    </div>
+    <div class="buttons">
+        <button size="tiny" nbButton status="danger" (click)="deleteTask()">Sil</button>
+        <button size="tiny" nbButton status="info" (click)="editTask()">Düzenle</button>
+    </div>
+</div>

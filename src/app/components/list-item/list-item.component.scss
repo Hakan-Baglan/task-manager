@@ -1,0 +1,14 @@
+.buttons {
+    :first-child {
+        margin-right: 10px;
+    }
+}
+
+.list-items {
+    div {
+        flex: 1;
+        &.buttons {
+            text-align: end;
+        }
+    }
+}
