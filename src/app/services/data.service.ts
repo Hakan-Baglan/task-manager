@@ -12,7 +12,7 @@ export class DataService {
 
   get datas(): Task[] {
     try {
-      return StorageService.getItem('tasks');
+      return StorageService.getItem('tasks') || [];
     } catch (error) {
       return [];
     }
